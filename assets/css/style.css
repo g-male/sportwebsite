@@ -1,0 +1,287 @@
+
+/* CSS Document */
+.toplogo{
+position: relative;
+
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica;
+  padding: 0;
+ 
+}
+/* navigation bar */ 
+.main{
+  margin-top: 1em;
+  
+  }
+.navbar #headimg{
+  width: 50%;
+position: relative;
+left: 25%;
+top: 0px;
+}
+
+#navid{
+  display: none;
+  margin-top: 130px;
+}
+
+.navitems li:last-child{
+  border-right: none;
+
+}
+.navitems a{
+  
+  display: block;
+  color: rgb(0, 47, 255);
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-left: black solid 1px;
+  border-right: black solid 1px;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  background-color: white;
+  width: 100%;
+}
+
+.navitems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: white; 
+  display: block;
+}
+.buttonclick{
+  z-index: 10000;
+  display: block;
+  position: relative;
+}
+.navbar{
+overflow: hidden;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+.navitems a:hover{
+  background-color: coral;
+}
+.navitems a{
+
+display: block;
+color: rgb(0, 47, 255);
+text-align: center;
+padding: 10px 10px;
+text-decoration: none;
+font-size: 17px;
+border-right: black solid 1px;
+border-top: black solid 1px;
+border-bottom: black solid 1px;
+background-color: white;
+width: 100%;
+}
+
+@media (min-width: 767px) /*tablet and above */ {
+  #navid{
+    display: block;
+  }
+  .buttonclick{
+   display: none;
+  }
+  .navbar{
+   
+    width: auto;
+text-align: center;
+margin: 0 auto;
+  }
+  .navitems{
+    
+    margin: 0 auto;
+  }
+ .navitems li {
+float: left;
+  border-right:1px solid #bbb;
+  
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+width: 150px;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(229, 255, 112);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+                       
+
+}
+
+/* background images */
+.bg-image {
+  /* Full height */
+  max-width: 100%;
+	height: 65%;
+
+  /* Center and scale the image nicely */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:contain;
+ 
+ 
+}
+
+/* ------BACKGROUND IMAGE---------*/
+
+.img1 { background-image: url("/img/inspo1.png");
+
+}
+
+.img2 { background-image: url("/img/inspo4.png")}
+.img3 { background-image: url("/img/inspo3.png")}
+.img4 { background-image: url("/img/inspo2.png")}
+
+
+
+/* 
+.animg:hover {
+  transform: translate(350px, -350px) rotate(360deg);
+  -webkit-transform: translate(350px, -350px) rotate(360deg);
+  -o-transform: translate(350px, -350px) rotate(360deg);
+  -moz-transform: translate(350px, -350px) rotate(360deg);
+}--*/
+/* ------LOGO SPIN ANIMATION------- --*/
+/* ------LOGO SPIN ANIMATION------- -- */
+
+  .animg{
+    animation-name: animg2;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -240px;
+   
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .animation2{
+    animation-name: animg2;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -240px;
+   animation-direction: reverse;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .animation3{
+    animation-name: animg2;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -240px;
+   animation-direction: reverse;
+    animation-duration: 10000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes animg2 {
+  from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+
+
+@media only screen and (min-width:768px)  {
+.animg{
+	animation-name: animg;
+	position: fixed;
+	
+	 top: 50%;
+  left: 50%;
+  margin-top: -155px;
+  margin-left: -240px;
+
+	animation-duration:50000ms;
+	animation-iteration-count: infinite;
+	
+  animation-timing-function: linear; 
+  
+}
+
+@keyframes animg {
+  0%{
+    transfrom:none;
+  }
+    12.5%{
+      transform: translate(350em, -425px) rotate(360deg);
+  -webkit-transform: translate(350px, -425px) rotate(360deg);
+  -o-transform: translate(350px, -425px) rotate(360deg);
+  -moz-transform: translate(350px, -425px) rotate(360deg);
+  }
+  25%{
+    transform: translate(-700px, 5px) rotate(180deg);
+  -webkit-transform: translate(-700px, 5px) rotate(180deg);
+  -o-transform: translate(-600px, 5px) rotate(180deg);
+  -moz-transform: translate(-600px, 5px) rotate(180deg);
+  }
+  37.5%{ transform: translate( -10px, 350px) rotate(360deg);
+    -webkit-transform: translate(-10px, 350px) rotate(360deg);
+    -o-transform: translate(-10px, 350px) rotate(360deg);
+    -moz-transform: translate(-10px, 350px) rotate(360deg);
+  }
+  50%{
+    transform: translate( 450px, -5px) rotate(180deg);
+    -webkit-transform: translate(450px, -5px) rotate(180deg);
+    -o-transform: translate(450px, -5px) rotate(180deg);
+    -moz-transform: translate(450px, -5px) rotate(180deg);
+  }
+  62.5%{
+    transform: translate( -425px, -425px) rotate(360deg);
+    -webkit-transform: translate(-425px, -425px) rotate(360deg);
+    -o-transform: translate(-425px, -425px) rotate(360deg);
+    -moz-transform: translate(-425px, -425px) rotate(360deg);
+  }
+  75%{
+    transform: translate( -400px, 425px) rotate(180deg);
+    -webkit-transform: translate(-400px, 425px) rotate(180deg);
+    -o-transform: translate(-400px, 425px) rotate(180deg);
+    -moz-transform: translate(-400px, 425px) rotate(180deg);
+  }
+  87.5%{
+    transform: translate(425px,10px) rotate(360deg);
+    -webkit-transform: translate( 425px,10px) rotate(360deg);
+    -o-transform: translate(425px,10px) rotate(360deg);
+    -moz-transform: translate(425px,10px) rotate(360deg);
+  }
+  100%{
+    transform: translate( -155px, -240px) rotate(180deg);
+    -webkit-transform: translate(-560px, -560px) rotate(180deg);
+    -o-transform: translate(-560px, -560px) rotate(180deg);
+    -moz-transform: translate(-560px, -560px) rotate(180deg);
+  }
+}
+
+}

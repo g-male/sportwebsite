@@ -1,0 +1,10 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SPORT WEBSITE"
+themesDir = "../.."
+[Params]
+description = ""
+# config.toml
+# ...
+
+unsafe= true

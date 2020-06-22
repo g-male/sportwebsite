@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 11px;
+        fill: #030303;
+        text-anchor: middle;
+        font-family: "Arial Black";
+      }
+    </style>
+  </defs>
+  <text id="SPORT" class="cls-1" x="23.835" y="27.146"><tspan x="23.835">SPORT</tspan></text>
+</svg>
